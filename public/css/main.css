@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #9d6381;
+    --secondary-color: #FDECEF;
+    --ternary-color: #CECCCC;
+}
+
+main {
+    background-color: white;
+    min-height: calc(100vh - 64px);
+}
+
+/* BOOTSTRAP */
+.navbar {
+    height: 64px;
+    background-color: white;
+    box-shadow: 0 0 10px #a9a9a9;
+    --bs-navbar-color: var(--ternary-color);
+    --bs-navbar-hover-color: #e5cad4;
+    --bs-navbar-active-color: var(--primary-color);
+    padding: 0 5rem;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.navbar-nav li {
+    padding: 0 0.5rem;
+}
+
+.btn-bd-primary {
+    --bs-btn-color: white;
+    --bs-btn-bg: var(--primary-color);
+    --bs-btn-hover-color: var(--primary-color);
+    --bs-btn-hover-bg: none;
+    --bs-btn-hover-border-color: var(--primary-color);
+}
+
+.btn-bd-secondary {
+    --bs-btn-color: var(--primary-color);
+    --bs-btn-bg: none;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #e5cad4;
+}
+
+.btn-bd-delete {
+    --bs-btn-bg: rgb(237, 66, 66);
+    --bs-btn-color: white;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #ffb3b3;
+}
+
+.card:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
